@@ -16,8 +16,11 @@ namespace pisang.Data
             modelBuilder.UseSerialColumns();
         }
 
-        public DbSet<PisangItemDTO> pisangItemDTOs { get; set; }
-        public DbSet<PembeliItemDTO> pembeliItemDTOs { get; set; }
-        public DbSet<PenjualItemDTO> penjualItemDTOs { get; set; }
+        public DbSet<Pisangs> PisangsBase { get; set; }
+        public DbSet<Cart> CartBase { get; set; }
+        public DbSet<Orders> OrdersBase { get; set; }
+        public DbSet<OrderItems> OrderItemsBase { get; set; }
+        public DbSet<UserCred> UsersCredBase { get; set; }
+        public DbSet<TblUsers> TblUsersBase { get; set; }
     }
 }
